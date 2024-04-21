@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contact Management System</h1>
+    <div class="container">
+        <form action="AddContactServlet" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Add Contact</button>
+        </form>
+        <div id="contact-list">
+            <h2>Contact List</h2>
+            <ul>
+                <%-- Display contact list here --%>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
